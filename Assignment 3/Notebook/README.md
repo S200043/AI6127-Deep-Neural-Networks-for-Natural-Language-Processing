@@ -2,7 +2,8 @@
 
 Source code in 'word_language_model' folder used for Q1e.  
 
-These are the command lines used for training the models:  
+These are the command lines used for training the models: 
+```
 python main.py --cuda --model Transformer --epochs 10 --emsize 512 --nhid 1024 --nlayers 6 --nhead 8 --save model_1.pt  
 python main.py --cuda --model Transformer --epochs 10 --emsize 512 --nhid 1024 --nlayers 3 --nhead 8 --save model_2.pt  
 python main.py --cuda --model Transformer --epochs 10 --emsize 256 --nhid 1024 --nlayers 6 --nhead 8 --save model_3.pt  
@@ -11,6 +12,7 @@ python main.py --cuda --model Transformer --epochs 10 --emsize 512 --nhid 512 --
 python main.py --cuda --model Transformer --epochs 10 --emsize 512 --nhid 1024 --nlayers 6 --nhead 8 --label-smoothing 0.1 --save model_6.pt  
 python main.py --cuda --model Transformer --epochs 10 --emsize 512 --nhid 1024 --nlayers 6 --nhead 8 --no-attention-scaling --save model_7.pt  
 python main.py --cuda --model Transformer --epochs 10 --emsize 512 --nhid 1024 --nlayers 6 --nhead 8  --lr 2.0 --save model_8.pt  
+```
 
 This is the command line used for training a baseline model using the original 'word_language_model' code:  
 python main.py --cuda --model Transformer --epochs 10 --emsize 512 --nhid 1024 --nlayers 6 --nhead 8 --save model_default.pt  
